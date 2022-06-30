@@ -1,6 +1,8 @@
-from math import sqrt
-def solve(n):
-   sq_root = int(sqrt(n))
-   return (sq_root*sq_root) == n
-n =int(input())
-print (solve(n))
+x=int(input())
+import math
+s=math.sqrt(x)
+y=(s-math.floor(s))
+if y==0:
+    print("True")
+else:
+    print("False")
