@@ -1,10 +1,9 @@
-a,b=map(int,input().split())
-l=list(map(int,input().split()))
-k=list(map(int,input().split()))
-l=set(l)
-k=set(k)
-g=[]
-for i in l:
-    if i in k:
-        g.append(i)
-print(len(g))        
+n,m=map(int,input().split())
+tar=[]
+ln=list(map(int,input().split()))
+lm=list(map(int,input().split()))
+for i in lm:
+    if i in ln:
+        if i not in tar:
+            tar.append(i)
+print(len(tar))
