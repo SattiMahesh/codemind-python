@@ -1,11 +1,9 @@
 n=int(input())
-
-l=list(map(str,input().split()))
-a=[]
-for i in l:
-    le=0
-    for char in i:
-        if char!='-':
-            le+=1
-    a.append(le)
-print(*a)
+s=input()
+x=s.split()
+for i in x:
+    c=0
+    for j in i:
+        if j in '0123456789':
+            c+=1
+    print(c,end=' ')    
