@@ -1,10 +1,12 @@
 n,k=map(int,input().split())
-l=list(map(str,input().split()))
-a=[]
-for i in l:
-    le=0
-    for c in i:
-        if c!='-':
-            le+=1
-    a.append(le)
-print(a.count(k))
+s=input()
+x=s.split()
+s=0
+for i in x:
+    c=0
+    for j in i:
+        if j in '0123456789':
+            c+=1
+    if c==k:
+        s+=1
+print(s)        
