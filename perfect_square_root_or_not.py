@@ -1,8 +1,10 @@
-x=int(input())
-import math
-s=math.sqrt(x)
-y=(s-math.floor(s))
-if y==0:
-    print("True")
+n=int(input())
+c=0
+for i in range(1,(n//2)+1):
+    if i*i==n and n//i==i:
+        
+        c+=1
+if c>0:        
+        print(True)
 else:
-    print("False")
+        print(False)
