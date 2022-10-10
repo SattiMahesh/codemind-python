@@ -1,9 +1,11 @@
 n,m=map(int,input().split())
-nl=list(map(int,input().split()))
-ml=list(map(int,input().split()))
-for i in nl:
-    if i not in ml:
-        print(i,end=' ')
-for i in ml:
-    if i not in nl:
-        print(i,end=' ')
+l=list(map(int,input().split()))
+ll=list(map(int,input().split()))
+a=[]
+for i in l:
+    if i not in ll:
+        a.append(i)
+for i in ll:
+    if i not in l:
+        a.append(i)
+print(*a)
