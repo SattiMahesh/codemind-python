@@ -1,15 +1,14 @@
-l=input()
-l=l.lower()
-d=1
-
-for i in l:
+n=input()
+n=n.lower()
+s=0
+for i in n:
     c=0
-    for j in l:
-        if i==j and i!=' ':
+    for j in range(len(n)):
+        if i==n[j]:
             c+=1
     if c==1:
         print(i)
-        d=1
+        s+=1
         break
-else:
-    print('-1')
+if s==0:
+    print("-1")
