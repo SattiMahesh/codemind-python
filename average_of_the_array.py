@@ -1,4 +1,5 @@
 n=int(input())
 l=list(map(int,input().split()))
-b=sum(l)/n
-print("%.2f"%b)
+s=sum(l)
+r=float(s/n)
+print("%.2f"%r)
