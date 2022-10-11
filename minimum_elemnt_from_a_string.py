@@ -11,4 +11,3 @@ if c==1:
     print(nn)
 else:
     print(m)
-Footer
