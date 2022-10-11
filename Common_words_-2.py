@@ -1,4 +1,3 @@
-
 l=list(map(str,input().split()))
 ll=list(map(str,input().split()))
 b=[]
