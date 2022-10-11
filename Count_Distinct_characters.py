@@ -7,4 +7,3 @@ for i in range(len(n)):
 a=list(set(a))
 a.sort()
 print(len(a))
-Footer
