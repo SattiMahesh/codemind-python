@@ -1,4 +1,4 @@
-s=input()
-x=s.split()
-for i in x:
-    print(i[::-1],end=' ')
+l=list(map(str,input().split()))
+for i in range(len(l)):
+    l[i]=l[i][::-1]
+print(*l)
