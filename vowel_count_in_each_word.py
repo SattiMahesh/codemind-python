@@ -8,3 +8,4 @@ for i in range(len(l)):
             c+=1
     a.append(c)
 print(*a)
+Footer
