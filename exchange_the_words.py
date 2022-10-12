@@ -1,5 +1,2 @@
-s=input()
-x=s.split()
-x=x[::-1]
-for i in x:
-    print(i,end=' ')
+l=list(map(str,input().split()))
+print(*l[::-1])
