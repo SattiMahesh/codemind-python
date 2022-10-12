@@ -1,6 +1,6 @@
-s=input()
+n=input()
 c=0
-for i in s:
-    if i==' ':
+for i in range(len(n)):
+    if n[i]==' ':
         c+=1
-print(c)        
+print(c)
