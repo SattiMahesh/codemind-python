@@ -1,12 +1,6 @@
-s=input()
+n=input()
 c=0
-for i in s:
-    if i.isdigit():
-        continue
-    elif i.isalnum():
-        continue
-    elif i==' ':
-        continue
-    else:
+for i in n:
+    if i.isalpha() or i==' ':
         c+=1
-print(c)        
+print(len(n)-c)
