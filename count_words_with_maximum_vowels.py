@@ -15,6 +15,6 @@ else:
         arr.append(c)
     c=0
     for i in range(len(arr)):
-        if arr[i]==max(arr):
+        if arr[i]==min(arr):
             c+=1
     print(c)
