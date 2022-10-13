@@ -1,7 +1,5 @@
-s=input()
-x=s.split()
-for i in x:
-    c=0
-    for j in i:
-        c+=1
-    print(c,end=' ')    
+l=list(map(str,input().split()))
+a=[]
+for i in range(len(l)):
+    a.append(len(l[i]))
+print(*a)
