@@ -1,6 +1,2 @@
-s=input()
-x=s.split()
-c=0
-for i in x:
-    c+=1
-print(c)    
+l=list(map(str,input().split()))
+print(len(l))
