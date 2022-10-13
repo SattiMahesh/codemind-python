@@ -1,8 +1,6 @@
-s=input()
-x=s.split()
-c=0
-for i in x:
-    for j in i:
-        c+=1
-    print(c) 
-    break
+l=list(map(str,input().split()))
+min=999
+for i in range(len(l)):
+    if len(l[i])<min:
+        min=len(l[i])
+print(min)
