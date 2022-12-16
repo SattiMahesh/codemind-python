@@ -1,11 +1,11 @@
-s="aeiouAEIOU"
-l=list(map(str,input().split()))
-max=0
-for i in range(len(l)):
+n=input()
+n=n.split()
+c=0
+s=[]
+for i in n:
     c=0
-    for j in l[i]:
-        if j in s:
+    for j in i:
+        if j in "aeiouAEIOU":
             c+=1
-    if c>max:
-        max=c
-print(max)
+    s.append(c)
+print(max(s))
