@@ -1,8 +1,8 @@
 n=int(input())
-l=list(map(int,input().split()))
-a=[]
-for i in l:
-    if i<10:
-        if i not in a:
-            a.append(i)
+a=list(map(int,input().split()))
+k=[]
+for i in a:
+    if i not in k:
+        k.append(i)
+a[:]=k
 print(*a)
